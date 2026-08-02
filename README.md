@@ -7,9 +7,9 @@ A simple, reusable Python command-line tool that cleans messy CSV/Excel datasets
 - Standardizes column names — converts headers to lowercase, snake_case (e.g. `"Full Name"` → `full_name`)
 - Fixes incorrect dtypes — detects and converts numeric-looking text columns to numbers, and parses date columns automatically (handles mixed date formats safely)
 - Handles missing values — choose one of three strategies:
-  - `drop` — remove rows with missing values
-  - `fill` — fill numeric columns with `0`, text columns with `"Unknown"`
-  - `impute` — fill numeric columns with the median, text columns with the mode
+  - `drop` - remove rows with missing values
+  - `fill` - fill numeric columns with `0`, text columns with `"Unknown"`
+  - `impute` - fill numeric columns with the median, text columns with the mode
 - Removes duplicate rows
 - Outputs: a cleaned dataset (same format as input) and a detailed cleaning log (`.txt`)
 
